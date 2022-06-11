@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run branch-naming-check && yarn lint-staged
+echo \"== Checking branch name ==\";
+npm run branch-naming-check
+
+echo \"== Running Lint Staged ==\";
+npm run lint-staged

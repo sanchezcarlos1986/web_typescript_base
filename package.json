@@ -10,6 +10,7 @@
     "test:unit": "jest",
     "test:watch": "jest --watchAll",
     "prepare": "husky install",
+    "lint-staged": "lint-staged",
     "branch-naming-check": "branch-naming-check \"^(master|develop)|(feature|bugfix|refactor|ci|hotfix|jira|issue|renovate)/[a-zA-Z0-9._-]+$\""
   },
   "dependencies": {
