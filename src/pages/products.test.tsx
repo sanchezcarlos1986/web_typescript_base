@@ -1,12 +1,12 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Sidebar from './sidebar.display';
+import Products from './products';
 
-describe('Sidebar', () => {
-  render(<Sidebar />);
+describe('Products', () => {
+  render(<Products />);
 
   test('render title', () => {
-    expect(screen.getByText(/Sidebar/i)).toBeInTheDocument();
+    expect(screen.getByText(/Products Page/i)).toBeInTheDocument();
   });
 });
