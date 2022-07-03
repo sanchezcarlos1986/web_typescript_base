@@ -19,7 +19,7 @@ const Layout: React.FC<Props> = ({children, title}) => {
         />
       </Head>
       <div className="bg-gray-200 min-h-screen">
-        <div className="flex min-h-screen">
+        <div className="block sm:flex min-h-screen">
           <Sidebar />
           <main className="sm:w-2/3 xl:w-4/5 p-5">
             <>
