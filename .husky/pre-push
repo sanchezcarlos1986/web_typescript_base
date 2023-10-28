@@ -10,6 +10,6 @@ echo \"4. Checking UNIT TESTS\";
 echo \"...............................${NC}\";
 CI=true npm run test:unit
 echo \"${YELLOW}UNIT TESTS OK${NC} ✅\";
-echo \"...............................\";
+echo \":::::::::::::::::::::::::::\";
 echo \ 
 echo \ 
