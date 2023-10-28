@@ -4,5 +4,8 @@
 echo \"== Checking branch name ==\";
 npm run branch-naming-check
 
-echo \"== Running Lint Staged ==\";
-npm run lint-staged
+#echo \"== Running Lint Staged ==\";
+#npm run lint-staged
+
+echo \"== analizando archivos ==\";
+npm run quality
