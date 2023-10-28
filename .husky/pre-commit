@@ -1,11 +1,17 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo \"== Checking branch name ==\";
+echo \"== 1. Checking branch name ==\";
 npm run branch-naming-check
+echo \"Branch Name OK ✅\";
+echo \"................................\";
 
-#echo \"== Running Lint Staged ==\";
-#npm run lint-staged
-
-echo \"== analizando archivos ==\";
+echo \"== 2. Analizando Controles Estáticos ==\";
 npm run quality
+echo \"Controles Estáticos OK ✅\";
+echo \"................................\";
+
+echo \"== 3. Running Lint Staged ==\";
+npm run lint-staged
+echo \"Lint Staged OK ✅\";
+echo \"................................\";
