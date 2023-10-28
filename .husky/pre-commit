@@ -1,17 +1,39 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo \"== 1. Checking branch name ==\";
+RED='\033[0;31m'
+GREEN='\033[0;32m'        # Green
+NC='\033[0m' # No Color
+CYAN='\033[0;36m'         # Cyan
+BBlue='\033[1;34m'        # Blue
+
+
+echo \"${BBlue}...............................\";
+echo \"1. Checking BRANCH NAME\";
+echo \"...............................${NC}\";
 npm run branch-naming-check
-echo \"Branch Name OK ✅\";
-echo \"................................\";
+echo \"${BBlue}BRANCH NAME OK${NC} ✅\";
+echo \"...............................\";
+echo \ 
+echo \ 
 
-echo \"== 2. Analizando Controles Estáticos ==\";
+
+echo \"${GREEN}...............................\";
+echo \"2. Checking STATIC CONTROLS\";
+echo \"...............................${NC}\";
 npm run quality
-echo \"Controles Estáticos OK ✅\";
-echo \"................................\";
+echo \"${GREEN}2. STATIC CONTROLS OK${NC} ✅\";
+echo \"...............................\";
+echo \ 
+echo \ 
 
-echo \"== 3. Running Lint Staged ==\";
+
+echo \"${CYAN}...............................\";
+echo \"3. Running LINT STAGED\";
+echo \"...............................${NC}\";
 npm run lint-staged
-echo \"Lint Staged OK ✅\";
-echo \"................................\";
+echo \"${CYAN}3. LINT STAGED OK${NC} ✅\";
+echo \"...............................\";
+echo \ 
+echo \ 
+

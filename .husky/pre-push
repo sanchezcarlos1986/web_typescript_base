@@ -1,6 +1,14 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo \"== Running Unit Tests ==\"; 
+YELLOW='\033[0;33m'       # Yellow
+
+
+echo \"${YELLOW}...............................\";
+echo \"4. Checking UNIT TESTS\";
+echo \"...............................${NC}\";
 CI=true npm run test:unit
-echo \"✅\";
+echo \"${YELLOW}UNIT TESTS OK${NC} ✅\";
+echo \"...............................\";
+echo \ 
+echo \ 

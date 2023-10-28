@@ -1,5 +1,0 @@
-BAD_IMPORT src/index.js
-BAD_IMPORT src/home.js
-BAD_IMPORT src/about.js
-BAD_IMPORT src/landing/index.jsx
-EXPORT_DEFAULT src/landing/index.jsx
