@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -- -p 8080",
+    "dev": "npm run send-message && next dev -- -p 8080",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "branch-naming-check": "branch-naming-check \"^(master|develop)|(feature|bugfix|refactor|ci|hotfix|jira|issue|renovate)/[a-zA-Z0-9._-]+$\"",
-    "quality": "node ./logica"
+    "quality": "node ./logica",
+    "send-message": "node ./sendMessage"
   },
   "dependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "7.14.5",
@@ -50,17 +51,21 @@
     "@typescript-eslint/parser": "4.32.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "27.4.5",
+    "chalk": "^5.3.0",
     "eslint": "7.32.0",
     "eslint-config-google": "0.14.0",
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-jest": "24.4.3",
     "eslint-plugin-prettier": "4.0.0",
+    "figlet": "^1.7.0",
+    "git-user-info": "^2.0.3",
     "husky": "7.0.4",
     "jest": "27.3.1",
     "lint-staged": "11.2.4",
     "prettier": "2.4.1",
     "ts-jest": "27.1.2",
+    "ts-node": "^10.9.1",
     "typescript": "4.4.4"
   }
 }
