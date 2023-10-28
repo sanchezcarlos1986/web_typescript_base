@@ -12,7 +12,6 @@ echo \"${BBlue}...............................\";
 echo \"1. Checking BRANCH NAME\";
 echo \"...............................${NC}\";
 npm run branch-naming-check
-echo \"${BBlue}BRANCH NAME OK${NC} ✅\";
 echo \":::::::::::::::::::::::::::\";
 echo \ 
 echo \ 
@@ -22,7 +21,6 @@ echo \"${GREEN}...............................\";
 echo \"2. Checking STATIC CONTROLS\";
 echo \"...............................${NC}\";
 npm run quality
-echo \"${GREEN}2. STATIC CONTROLS OK${NC} ✅\";
 echo \":::::::::::::::::::::::::::\";
 echo \ 
 echo \ 
@@ -32,7 +30,6 @@ echo \"${CYAN}...............................\";
 echo \"3. Running LINT STAGED\";
 echo \"...............................${NC}\";
 npm run lint-staged
-echo \"${CYAN}3. LINT STAGED OK${NC} ✅\";
 echo \":::::::::::::::::::::::::::\";
 echo \ 
 echo \ 
