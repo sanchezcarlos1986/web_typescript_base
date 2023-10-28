@@ -2,6 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 
 YELLOW='\033[0;33m'       # Yellow
+NC='\033[0m' # No Color
 
 
 echo \"${YELLOW}...............................\";
